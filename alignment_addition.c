@@ -1,0 +1,1 @@
+n,m,*x,*y,u,v;main(a,b)char**b;{u=n=atoi(b[1]);x=malloc(n*4);v=m=atoi(b[2]);y=malloc(m*4);while(u^v){while(u>v)v+=m;while(u<v)u+=n;}for(v=u;v;--v)x[v%n]=atoi(b[3+v%n]),y[v%m]=atoi(b[3+n+v%m]);printf("[");for(v=0;v<u;++v)printf("%d%s",x[v%n]+y[v%m],!((v+1)%n&&(v+1)%m)?(u-1-v?"][":"]"):" ");puts("");}

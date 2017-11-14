@@ -1,0 +1,1 @@
+i,j,n,c,r,e,**t;main(a,b)char**b;{c=0,n=atoi(*(++b)),t=malloc((n+1)*8);for(i=0;(t[i]=malloc(n*4))&&i<n;++i)for(j=0;j<n;)t[i][j++]=atoi(*(++b))-1;for(i=0;i<n&&memset(t[n],0,n*4);++i){e=i;for(j=n;j--;)t[n][e]=1,e=t[e][i];for(r=1,j=n;j--;)r=!t[n][j]?0:r;c=r?1:c;}puts(c?"True":"False");}

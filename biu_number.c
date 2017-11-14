@@ -1,0 +1,1 @@
+p(n,i){for(;i<n;++i)if(n%i==0)return 0;return 1;}c,n,s,i,j;main(a,b)char**b;{c=n=0;while(c<atoi(b[1])){++n;s=0;for(i=n;i;--i)if(n%i==0)if(p(i,2))s+=i;else for(j=2;j<i;++j)if(p(j,2)&&i%j==0)s+=j;if(n%s==0)++c;}printf("%d\n",n);}
